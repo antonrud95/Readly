@@ -1,0 +1,230 @@
+.dash {
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+    /* left: 224px; */
+    /* margin-top: 114px; */
+    padding-left: 40px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.collections {
+    max-width: 528px;
+    max-height: 302px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 20px 0 0 20px;
+    border-radius: 4px;
+}
+
+.tops {
+    max-width: 528px;
+    min-height: 205px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 20px 0 0 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tops-wrapper__image {
+    margin-right: 16px;
+}
+
+.tops-wrapper__content p {
+    padding-right: 35px;
+}
+
+.readings,
+.favourites {
+    max-width: 565px;
+    max-height: 324px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 20px 0 27px 20px !important;
+    box-sizing: border-box;
+}
+
+.best {
+    max-width: 528px;
+    max-height: 296px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-book-wrapper {
+    max-width: 256px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.reader {
+    min-width: 565px;
+    min-height: 155px;
+    background-color: #fff;
+    border-radius: 4px;
+    /* padding: 20px 0 24px 20px; */
+    box-sizing: border-box;
+}
+
+.reader-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reader-wrapper {
+    text-align: center;
+}
+
+
+.items-wrapper,
+.readings-wrapper,
+.favourites-wrapper {
+    display: flex;
+}
+
+.dash-title {
+    margin: 0;
+}
+
+/* .books-card-wrapper {
+    width: 528px;
+    height: 302px;
+    display: flex;
+} */
+
+.books-card-wrapper__content {
+    width: 140px;
+    height: 165px;
+}
+.books-card-wrapper__content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.books-card-wrapper {
+    width: 33.33333%;
+}
+
+.books-card-wrapper__title {
+    width: 75%;
+}
+
+.books-card-wrapper__title h3,
+.readings h3,
+.favourites h3 {
+    margin: 0;
+}
+
+.readings-card-wrapper,
+.favourites-card-wrapper {
+    width: 25%;
+}
+
+
+h3 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #1E2C40;
+    margin-bottom: 24px !important; 
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E2C40;
+    margin: 12px 0 28px 0;
+}
+
+h5 {
+    margin-top: 4px;
+    margin-bottom: 14px;
+    color: #BBC1CA;
+}
+
+p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E2C40;
+}
+
+.tops-wrapper__content-title p {
+    position: absolute;
+    padding: 6px 16px;
+    background-color: #EBEFF4;
+    border-radius: 4px;
+    top: 15px;
+    right: 20px;
+}
+
+.tops-wrapper__content-title h3 {
+    margin-bottom: 4px !important;
+}
+
+.best-book-wrapper h3 {
+    width: 75%;
+    margin: 20px auto 10px auto !important;
+}
+.best-book-wrapper p {
+    width: 85%;
+    margin: 0 auto 24px auto;
+}
+
+.readings-card-wrapper h4,
+.favourites-card-wrapper h4 {
+    margin: 10px 0 6px 0 !important;
+}
+
+.favourites-card-wrapper h4 {
+    width: 80%
+}
+.readings-card-wrapper p,
+.favourites-card-wrapper p {
+    margin: 0 !important;
+}
+
+.reader h3 {
+    margin-bottom: 16px !important;
+    padding: 20px 0 0 20px;
+}
+.reader p {
+    margin-top: 6px !important;
+}
+
+.first-col {
+    margin-right: 16px;
+}
+
+
+.collections-title,
+.readings-title,
+.favourites-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-link {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9BA4B3;
+    margin-bottom: 24px !important;
+}
+
+

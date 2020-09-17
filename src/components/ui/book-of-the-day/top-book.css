@@ -1,0 +1,11 @@
+.tops-wrapper {
+    display: flex;
+}
+
+.tops-wrapper__content-title h3 {
+    margin: 0;
+}
+
+.tops-wrapper__content p {
+    margin: 0;
+}
