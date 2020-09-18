@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
+// import axios from 'axios';
+
 import BooksCard from '../../ui/books-card/books-card';
 import TopBook from '../../ui/book-of-the-day/top-book';
 import BestBook from '../../ui/best-book-card/best-book-card';
@@ -87,110 +89,58 @@ const DashboardPage = () => {
 
 
 
-  // useEffect(() => {
-  //   const getBooks = async () => {
-  //     const response = await fetch('http://localhost:1337/books');
-  //     const data = await response.json();
-  //     setBooks(data);
-  //   }
-  //   getBooks();
-  //   setLoading(true)
-
-  //   const getReadings = async () => {
-  //     const response = await fetch('http://localhost:1337/readings');
-  //     const data = await response.json();
-  //     setReadings(data);
-  //   }
-  //   getReadings();
-  //   setLoading(true)
-
-  //   const getFavourites = async () => {
-  //     const response = await fetch('http://localhost:1337/favourites');
-  //     const data = await response.json();
-  //     setFavourites(data);
-  //   }
-  //   getFavourites();
-  //   setLoading(true)
-
-  //   const getTops = async () => {
-  //     const response = await fetch('http://localhost:1337/tops');
-  //     const data = await response.json();
-  //     setTops(data);
-  //   }
-  //   getTops();
-  //   setLoading(true)
-
-  //   const getBests = async () => {
-  //     const response = await fetch('http://localhost:1337/bests');
-  //     const data = await response.json();
-  //     setBests(data);
-  //   }
-  //   getBests();
-  //   setLoading(true)
-
-  //   const getReaders = async () => {
-  //     const response = await fetch('http://localhost:1337/readers');
-  //     const data = await response.json();
-  //     setReaders(data);
-  //   }
-  //   getReaders();
-  //   setLoading(true)
-  // }, []);
-
-
-  const fetchData = () => {
+  useEffect(() => {
     const getBooks = async () => {
       const response = await fetch('http://localhost:1337/books');
       const data = await response.json();
       setBooks(data);
+      setLoading(true)
     }
     getBooks();
-    setLoading(true)
 
     const getReadings = async () => {
       const response = await fetch('http://localhost:1337/readings');
       const data = await response.json();
       setReadings(data);
+      setLoading(true)
     }
     getReadings();
-    setLoading(true)
 
     const getFavourites = async () => {
       const response = await fetch('http://localhost:1337/favourites');
       const data = await response.json();
       setFavourites(data);
+      setLoading(true)
     }
     getFavourites();
-    setLoading(true)
 
     const getTops = async () => {
       const response = await fetch('http://localhost:1337/tops');
       const data = await response.json();
       setTops(data);
+      setLoading(true)
     }
     getTops();
-    setLoading(true)
 
     const getBests = async () => {
       const response = await fetch('http://localhost:1337/bests');
       const data = await response.json();
       setBests(data);
+      setLoading(true)
     }
     getBests();
-    setLoading(true)
 
     const getReaders = async () => {
       const response = await fetch('http://localhost:1337/readers');
       const data = await response.json();
       setReaders(data);
+      setLoading(true)
     }
     getReaders();
-    setLoading(true)
-  }
-
-  useEffect(() => {
-    fetchData()
   }, []);
+
+
+
 
  
   
@@ -284,8 +234,9 @@ const DashboardPage = () => {
               </div>
             </div>
           </div>
-        </div> 
-        : <img src={LoadingImg} alt="loading"/>}
+        </div> : <img src={LoadingImg} alt="loading" className="loading-image"/>}
+       
+        {/* {loading ? console.log('it worked') : null} */}
       </React.Fragment>
     )
 };
