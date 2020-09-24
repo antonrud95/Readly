@@ -101,39 +101,43 @@ const ActivityCard = () => {
                 }
 
                 function getBody(bodyItem) {
-                    console.log(bodyItem);
+                    // console.log(bodyItem);
                     return bodyItem.lines;
                 }
-
-                
 
                 // Set Text
                 if (tooltipModel.body) {
                     var titleLines = tooltipModel.title || [];
                     var bodyLines = tooltipModel.body.map(getBody);
-                    
 
                     var innerHtml = '<thead>';
-
-                    titleLines.forEach(function(title) {
-                        innerHtml +=  title + ' ' + 'Sep 22';
+                    
+                    bodyLines.forEach(function(body, i) {
+                        // var colors = tooltipModel.labelColors[i];
+                        // var style = 'background: ' + colors.backgroundColor;
+                        // style += '; border-color:' + colors.borderColor;
+                        // style += '; border-width: 2px';
+                        // style += '; background-color: red';
+                        // var span = '<span style="' + style + '"></span>';
+                        // innerHtml += body + ' ' + 'reviews';
+                        innerHtml += `<h6 class="text">${body} reviews</h6>`;
+                        // console.log(innerHtml)
+                        // innerHtml += body + 'reviews';
                     });
                     innerHtml += '</thead><tbody>';
 
-                    bodyLines.forEach(function(body, i) {
-                        // var colors = tooltipModel.labelColors[i];
-                        // var style = 'background:' + colors.backgroundColor;
-                        // style += '; border-color:' + colors.borderColor;
-                        // style += '; border-width: 2px';
-                        // var span = '<span style="' + style + '"></span>';
-                        innerHtml += body + ' ' + 'reviews';
-                        // innerHtml += body + 'reviews';
+                    titleLines.forEach(function(title) {
+                        // innerHtml +=  title + ' ' + 'Sep 20';
+                        innerHtml +=  `<p class="title">${title} Sep 20</p>`;
                     });
                     innerHtml += '</tbody>';
 
                     var tableRoot = tooltipEl.querySelector('table');
                     tableRoot.innerHTML = innerHtml;
                 }
+                
+                
+                console.log(tooltipEl);
 
                 // `this` will be the overall tooltip
                 var position = this._chart.canvas.getBoundingClientRect();
@@ -148,6 +152,8 @@ const ActivityCard = () => {
                 tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
                 // tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
                 tooltipEl.style.pointerEvents = 'none';
+
+                console.log(tooltipModel);
             }
         }
     }

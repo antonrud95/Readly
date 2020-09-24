@@ -5,12 +5,16 @@
 }
 
 #chartjs-tooltip {
+    position: relative;
     min-width: 99px;
-    height: 53px;
+    min-height: 53px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #chartjs-tooltip::after {
@@ -23,8 +27,37 @@
     transform: rotate(45deg) translateX(-50%);
     margin-top: -5px;
     border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: none;
+    border-bottom: none;
     border-left: 2px solid #fff;
     background-color: #fff;
+    z-index: 0;
+}
+
+.title {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    z-index: 1000;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #BBC1CA;
+    margin: 0;
+}
+
+.text {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E2C40;
+    margin: 0;
 }
