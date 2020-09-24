@@ -6,6 +6,7 @@ import Header from './components/ui/header/header';
 
 import DashboardPage from './components/pages/dashboard/dashboard';
 import SeeAll from './components/sections/all-books/all-books';
+import ExplorePage from './components/pages/explore/explore';
 
 
 import './App.css';
@@ -24,6 +25,9 @@ function App() {
                 <DashboardPage />
               </Route>
               <Route path='/dashboard/more-books' component={SeeAll} />
+              <Route path='/explore'>
+                <ExplorePage />
+              </Route>
             </Switch>
           </main>
           

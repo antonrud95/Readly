@@ -15,6 +15,7 @@ input {
 .input-wrapper {
     max-height: 40px;
     position: relative;
+    max-width: 369px !important;
 }
 
 #input {
@@ -30,6 +31,7 @@ input {
     display: flex;
     align-items: center;
     transition: .2s linear;
+    box-sizing: border-box;
 }
 
 .logo-wrapper {

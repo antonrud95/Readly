@@ -1,0 +1,5 @@
+.line-graph {
+    display: flex;
+    max-width: 555px;
+    min-height: 324px;
+}
