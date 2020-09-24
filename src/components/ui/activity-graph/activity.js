@@ -9,15 +9,15 @@ const ActivityCard = () => {
 
     useEffect(() => {
         let ctx = document.querySelector('canvas').getContext("2d");
-        let gradient = ctx.createLinearGradient(0, 0, 0, 450);
+        let gradient = ctx.createLinearGradient(0, 0, 0, 100);
         gradient.addColorStop(0, 'rgba(59, 75, 214, 0.05)');
-        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.05)');
+        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.09)');
         const chart = () => {
             setChartData({
                 labels: [1, 2, 3, 4, 5, 6, 7],
                 datasets: [{
                     // label: 'reviews',
-                    data: [0, 1, 2, 3, 5, 6, 7],
+                    data: [2, 4, 15, 18, 10, 13, 2],
                     backgroundColor: gradient,
                     borderWidth: 2,
                     borderColor: '#B4BDE9',
@@ -41,11 +41,13 @@ const ActivityCard = () => {
                     max: 31,
                     stepSize: 1,
                     fontSize: 9,
-                    beginAtZero: true
+
                 },
                 gridLines: {
                     display: false,
-                    drawBorder: false
+                    drawBorder: false,
+                    color: '#F0F0F0',
+                    // zeroLineColor: '#F0F0F0',
                 }
             }],
             yAxes: [{
@@ -54,11 +56,14 @@ const ActivityCard = () => {
                     min: 0,
                     max: 20,
                     stepSize: 5,
-                    fontSize: 9
+                    fontSize: 9,
+                    
                 },
                 gridLines: {
-                //display: false,
-                    drawBorder: false
+                // display: false,
+                    drawBorder: false,
+                    color: '#F0F0F0',
+                    zeroLineColor: '#F0F0F0',
                 }
             }]
         },

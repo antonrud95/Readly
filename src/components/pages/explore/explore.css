@@ -1,0 +1,8 @@
+.line-wrapper {
+    width: 555px;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

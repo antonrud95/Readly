@@ -7,7 +7,9 @@ const ExplorePage = () => {
     return (
         <div>
             <h2>Explore page does not exist yet...</h2>
-            <ActivityCard />
+            <div className="line-wrapper">
+                <ActivityCard />
+            </div>
         </div>
     )
 };
