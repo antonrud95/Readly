@@ -38,7 +38,7 @@
     color: #1E2C40;
 }
 
-.line-wrapper-buttons {
+.buttons {
     box-sizing: border-box;
     margin-left: 54px;
     margin-bottom: 28px;
@@ -50,7 +50,7 @@
     display: flex;
 }
 
-.line-wrapper-buttons__link {
+.buttons-inactive {
     text-decoration: none;
     font-weight: 500;
     font-size: 12px;
@@ -63,22 +63,30 @@
     border: 1px solid transparent;
 }
 
-.line-wrapper-buttons__link:focus {
+.buttons-active {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
     border: 1px solid black;
     border-radius: 4px;
     color: #1E2C40;
     transition: .2s ease-in-out;
 }
 
-.line-wrapper-buttons__link:nth-child(1) {
+.button-default:nth-child(1) {
     min-height: 28px !important;
     min-width: 89px !important;
 }
-.line-wrapper-buttons__link:nth-child(2) {
+.button-default:nth-child(2) {
     min-height: 28px !important;
     min-width: 114px !important;
 }
-.line-wrapper-buttons__link:nth-child(3) {
+.button-default:nth-child(3) {
     min-height: 28px !important;
     min-width: 99px !important;
 }
