@@ -37,8 +37,8 @@ const ActivityCard = () => {
             xAxes: [{
                 ticks: { 
                     // display: false,
-                    min: 0,
-                    max: 31,
+                    min: 1,
+                    max: 7,
                     stepSize: 1,
                     fontSize: 9,
 

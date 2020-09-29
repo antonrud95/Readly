@@ -1,0 +1,79 @@
+/* .svg {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke: red;
+}
+
+.circle-first {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 20;
+    stroke: #1E2C40;
+}
+
+.circle-second {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 55;
+    stroke:#38C7E7;
+}
+.circle-third {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 360;
+    stroke:#7BDFFF;
+}
+.circle-fourth {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 40;
+    stroke: #8EA0FF;
+} */
+/* .circle-fifth {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 600;
+    stroke:#8EA0FF;
+} */
+
+.genres {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.parent {
+    position: relative;
+    z-index: 11;
+}
+
+.child {
+    position: absolute;
+    z-index: 10;
+}
+.child-first {
+    position: absolute;
+    z-index: 14;
+}
+.child-second {
+    position: absolute;
+    z-index: 17;
+}
+.child-third {
+    position: absolute;
+    z-index: 16;
+}
+.child-fourth {
+    position: absolute;
+    z-index: 15;
+}
+
+.child-sec {
+    position: absolute;
+    z-index: 13;
+}
