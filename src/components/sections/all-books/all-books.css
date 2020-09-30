@@ -1,8 +1,5 @@
 .shadow {
-    position: absolute;
     box-sizing: border-box;
-    top: 0;
-    left: 224px;
     display: flex;
     align-items: center;
     justify-content: center;
