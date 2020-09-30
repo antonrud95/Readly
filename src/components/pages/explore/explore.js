@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ActivityCard from '../../ui/activity-graph/activity';
 import Progressbar from '../../ui/progressbar-component/progressbar';
 import Genres from '../../ui/genres-component/genres';
@@ -19,12 +21,14 @@ const ExplorePage = () => {
             const response = await fetch('http://localhost:1337/social-activities');
             const data = await response.json();
             setActivities(data);
+            setLoading(true)
           }
           getSocial();
         const getRead = async () => {
             const response = await fetch('http://localhost:1337/recently-reads');
             const data = await response.json();
             setRecentlyRead(data);
+            setLoading(true)
           }
           getRead();
     }, [])
@@ -49,6 +53,10 @@ const ExplorePage = () => {
 
     //Add authors
     const authors = ['Edgar Allan Poe', 'Ray Bradbury', 'Haruki Murakami', 'Stephen King', 'J.K. Rowling', 'J.R.R. Tolkien', 'Charles Palahniuk', 'Johann Goethe'];
+
+    //Add spinner condition
+    const [ loading, setLoading ] = useState(false);
+
 
     return (
         <div className="explore">
@@ -85,7 +93,10 @@ const ExplorePage = () => {
                             <h3>Social activity</h3>
                             <Link to="/explore/activity" className="progress-title__link">See more</Link>
                         </div>
-                        {activities.map(item => 
+                        {!loading ? <Spinner animation="border" role="status">
+                                    <span className="sr-only">Loading...</span>
+                                    </Spinner> : 
+                        activities.map(item => 
                             <SocialCard 
                             url={item.logo.url}
                             text={item.text}
@@ -115,7 +126,10 @@ const ExplorePage = () => {
                             <Link to="/explore/all-read" className="progress-title__link">See more</Link>
                         </div>
                         <div className="recentry-read-items">
-                            {recentlyRead.map(item => 
+                            {!loading ? <Spinner animation="border" role="status">
+                                    <span className="sr-only">Loading...</span>
+                                    </Spinner> :
+                            recentlyRead.map(item => 
                                 <BooksCard 
                                 stylesWrapper={'recentry-read-item'}
                                 stylesWrapperContent={'recentry-read-img'}

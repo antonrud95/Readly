@@ -5,7 +5,8 @@ import TopBook from '../../ui/book-of-the-day/top-book';
 import BestBook from '../../ui/best-book-card/best-book-card';
 import BestReader from '../../ui/best-reader/best-reader';
 
-import LoadingImg from '../../../assets/images/loading-image/loading.png';
+import Spinner from 'react-bootstrap/Spinner';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './dashboard.css';
 
@@ -162,9 +163,9 @@ const DashboardPage = () => {
               </div>
             </div>
           </div>
-        </div> : <img src={LoadingImg} alt="loading" className="loading-image"/>}
-       
-        {/* {loading ? console.log('it worked') : null} */}
+        </div> :  <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>}
       </React.Fragment>
     )
 };

@@ -2,6 +2,7 @@
     width: 108px;
     height: 108px;
     margin: 0 auto;
+    background-color: transparent !important;
 }
 
 .CircularProgressbar-text {
