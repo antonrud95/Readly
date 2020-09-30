@@ -73,7 +73,6 @@
     min-height: 155px;
     background-color: #fff;
     border-radius: 4px;
-    /* padding: 20px 0 24px 20px; */
     box-sizing: border-box;
 }
 
@@ -96,12 +95,6 @@
 .dash-title {
     margin: 0;
 }
-
-/* .books-card-wrapper {
-    width: 528px;
-    height: 302px;
-    display: flex;
-} */
 
 .books-card-wrapper__content {
     width: 140px;

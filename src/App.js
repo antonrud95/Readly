@@ -25,9 +25,10 @@ function App() {
                 <DashboardPage />
               </Route>
               <Route path='/dashboard/more-books' component={SeeAll} />
-              <Route path='/explore'>
+              <Route path='/explore' exact>
                 <ExplorePage />
               </Route>
+              <Route path='/explore/all-goals' component={SeeAll} />
             </Switch>
           </main>
           

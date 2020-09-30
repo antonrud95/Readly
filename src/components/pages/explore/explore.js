@@ -91,7 +91,7 @@ const ExplorePage = () => {
                     <div className="social-wrapper">
                         <div className="progress-title">
                             <h3>Social activity</h3>
-                            <Link to="/explore/activity" className="progress-title__link">See more</Link>
+                            <Link to="/explore/all-goals" className="progress-title__link">See more</Link>
                         </div>
                         {!loading ? <Spinner animation="border" role="status">
                                     <span className="sr-only">Loading...</span>
@@ -113,7 +113,7 @@ const ExplorePage = () => {
                         <ActivityCard />
                         <div className="buttons">
                             {button.objects.map((item, index) => (
-                                <Link to="/explore/reader-activity" key={index} className={[toggleActiveStyles(index), 'button-default'].join(' ')} onClick={() => {toggleActive(index)}}>{item.name}</Link>
+                                <Link to="/explore" key={index} className={[toggleActiveStyles(index), 'button-default'].join(' ')} onClick={() => {toggleActive(index)}}>{item.name}</Link>
                                 )
                             )}
                         </div>
@@ -123,7 +123,7 @@ const ExplorePage = () => {
                     <div className="recentry-read-wrapper">
                     <div className="progress-title recently-title">
                             <h3>Recently read</h3>
-                            <Link to="/explore/all-read" className="progress-title__link">See more</Link>
+                            <Link to="/explore/all-goals" className="progress-title__link">See more</Link>
                         </div>
                         <div className="recentry-read-items">
                             {!loading ? <Spinner animation="border" role="status">
@@ -143,7 +143,7 @@ const ExplorePage = () => {
                     <div className="genres-wrapper">
                         <div className="progress-title genres-title">
                             <h3>Favourite genres</h3>
-                            <Link to="/explore/all-genres" className="progress-title__link">See more</Link>
+                            <Link to="/explore/all-goals" className="progress-title__link">See more</Link>
                         </div>
                         <div className="progressbar">
                             <Genres />
