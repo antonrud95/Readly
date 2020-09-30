@@ -1,10 +1,5 @@
 import React from 'react';
 
-// import { Link } from 'react-router-dom';
-
-
-
-
 const API_URL = 'http://localhost:1337';
 const formatImagwUrl = url => `${API_URL}${url}`;
 

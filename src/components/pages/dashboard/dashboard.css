@@ -1,17 +1,11 @@
 .dash {
     padding: 0;
     margin: 0;
-    /* position: absolute; */
-    /* left: 224px; */
-    /* margin-top: 114px; */
     padding-left: 40px;
     display: flex;
     width: 100%;
     height: 100%;
-    
 }
-
-
 
 .collections {
     max-width: 528px;

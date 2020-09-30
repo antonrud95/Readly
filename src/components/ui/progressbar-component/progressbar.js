@@ -5,7 +5,6 @@ import 'react-circular-progressbar/dist/styles.css';
 import './progressbar.css';
 
 const Progressbar = ({percentage, text, pathColor, trailColor, textColor}) => {
-    // const percentage = 48;
     return (
         <div className='progress'>
             <CircularProgressbar 
@@ -19,7 +18,6 @@ const Progressbar = ({percentage, text, pathColor, trailColor, textColor}) => {
               })}
             />;
         </div>
-        
     )
 }
 

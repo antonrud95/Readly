@@ -16,7 +16,6 @@ const ActivityCard = () => {
             setChartData({
                 labels: [1, 2, 3, 4, 5, 6, 7],
                 datasets: [{
-                    // label: 'reviews',
                     data: [2, 4, 15, 18, 10, 13, 2],
                     backgroundColor: gradient,
                     borderWidth: 2,
@@ -36,7 +35,6 @@ const ActivityCard = () => {
         scales: {
             xAxes: [{
                 ticks: { 
-                    // display: false,
                     min: 1,
                     max: 7,
                     stepSize: 1,
@@ -47,12 +45,10 @@ const ActivityCard = () => {
                     display: false,
                     drawBorder: false,
                     color: '#F0F0F0',
-                    // zeroLineColor: '#F0F0F0',
                 }
             }],
             yAxes: [{
                 ticks: { 
-                    // display: false
                     min: 0,
                     max: 20,
                     stepSize: 5,
@@ -60,7 +56,6 @@ const ActivityCard = () => {
                     
                 },
                 gridLines: {
-                // display: false,
                     drawBorder: false,
                     color: '#F0F0F0',
                     zeroLineColor: '#F0F0F0',
@@ -106,7 +101,6 @@ const ActivityCard = () => {
                 }
 
                 function getBody(bodyItem) {
-                    // console.log(bodyItem);
                     return bodyItem.lines;
                 }
 
@@ -118,21 +112,11 @@ const ActivityCard = () => {
                     var innerHtml = '<thead>';
                     
                     bodyLines.forEach(function(body, i) {
-                        // var colors = tooltipModel.labelColors[i];
-                        // var style = 'background: ' + colors.backgroundColor;
-                        // style += '; border-color:' + colors.borderColor;
-                        // style += '; border-width: 2px';
-                        // style += '; background-color: red';
-                        // var span = '<span style="' + style + '"></span>';
-                        // innerHtml += body + ' ' + 'reviews';
                         innerHtml += `<h6 class="text">${body} reviews</h6>`;
-                        // console.log(innerHtml)
-                        // innerHtml += body + 'reviews';
                     });
                     innerHtml += '</thead><tbody>';
 
                     titleLines.forEach(function(title) {
-                        // innerHtml +=  title + ' ' + 'Sep 20';
                         innerHtml +=  `<p class="title">${title} Sep 20</p>`;
                     });
                     innerHtml += '</tbody>';
@@ -143,7 +127,6 @@ const ActivityCard = () => {
                 
                 
                 console.log(tooltipEl);
-
                 // `this` will be the overall tooltip
                 var position = this._chart.canvas.getBoundingClientRect();
 
@@ -155,7 +138,6 @@ const ActivityCard = () => {
                 tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
                 tooltipEl.style.fontSize = tooltipModel.bodyFontSize + 'px';
                 tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
-                // tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
                 tooltipEl.style.pointerEvents = 'none';
 
                 console.log(tooltipModel);

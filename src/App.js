@@ -8,9 +8,7 @@ import DashboardPage from './components/pages/dashboard/dashboard';
 import SeeAll from './components/sections/all-books/all-books';
 import ExplorePage from './components/pages/explore/explore';
 
-
 import './App.css';
-
 
 function App() {
 
@@ -31,9 +29,7 @@ function App() {
               <Route path='/explore/all-goals' component={SeeAll} />
             </Switch>
           </main>
-          
       </Router>
-      
     </div>
   );
 }

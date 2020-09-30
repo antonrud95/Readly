@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './best-book-card.css'
-
 const API_URL = 'http://localhost:1337';
 const formatImagwUrl = url => `${API_URL}${url}`;
 
