@@ -13,15 +13,25 @@
 
 .nav-item {
     display: flex;
-    text-decoration: none;
+    text-decoration: none !important;
     align-items: center;
     padding: 15px 0px 15px 43px;
 }
 
-/* .nav-item:focus {
-    border-left: 3px solid #3B5DD6;
-    color: black;
-} */
+.nav-item.item.active {
+    text-decoration: none !important;
+}
+.nav-item.item.active p {
+    color: #1E2C40;
+}
+
+svg {
+    margin-right: 15px;
+}
+
+.nav-item.item.active .svg-icon {
+    fill: #3B5DD6 !important;
+}
 
 .nav-item p {
     margin: 0;
@@ -33,10 +43,6 @@
 
 .nav-first {
     padding: 43px 0 31px 43px;
-}
-
-.img-logo {
-    margin-right: 15px;
 }
 
 .bottom-item-1 {
