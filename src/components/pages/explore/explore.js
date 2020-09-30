@@ -10,7 +10,7 @@ const ExplorePage = () => {
 
     const [ button, setButton ] = useState({
         activeObject: null,
-        objects: [{id: 1, name: 'Reviews'}, {id: 2, name: 'Books added'}, {id: 3, name: 'Discussions'}]
+        objects: [{id: 1, name: 'Reviews'}, {id: 2, name: 'Books added'}, {id: 3, name: 'Discussions'}],
     })
 
     const toggleActive = index => {
@@ -26,8 +26,13 @@ const ExplorePage = () => {
     }
 
     return (
-        <div>
-            <h2>Explore page does not exist yet...</h2>
+        <div className="explore-wrapper">
+            <div className="first-col">
+
+            </div>
+            <div className="second-col">
+
+            </div>
             <div className="line-wrapper">
                 <div className="line-wrapper__title">
                     <h2>Your reader activity</h2>
@@ -40,19 +45,63 @@ const ExplorePage = () => {
                         )
                     )}
                 </div>
-                {/* <div className="buttons">
-                    <Link to="/explore/reader-activity" className="buttons-active button-default">Reviews</Link>
-                    <Link to="/explore/reader-activity" className="buttons-inactive button-default">Books added</Link>
-                    <Link to="/explore/reader-activity" className="buttons-inactive button-default">Discussions</Link>
-                </div> */}
             </div>
             <div className="progress-wrapper">
-                <Progressbar percentage={72} text={'72%'} pathColor={'#3B5DD6'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
-                <Progressbar percentage={48} text={'48%'} pathColor={'#7BDFFF'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
-                <Progressbar percentage={80} text={'80%'} pathColor={'#1E2C40'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
+                <div className="progress-title">
+                    <h3>Your goals</h3>
+                    <Link to="/explore/all-goals" className="progress-title__link">See more</Link>
+                </div>
+                <div className="progress-cards">
+                    <div className="progress-card">
+                        <p>Read 40 books a year</p>
+                        <Progressbar percentage={72} text={'72%'} pathColor={'#3B5DD6'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
+                    </div>
+                    <div className="progress-card">
+                        <p>Read 10 business books</p>
+                        <Progressbar percentage={48} text={'48%'} pathColor={'#7BDFFF'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
+                    </div>
+                    <div className="progress-card">
+                        <p>Read 15 biographies</p>
+                        <Progressbar percentage={80} text={'80%'} pathColor={'#1E2C40'} trailColor={'#EBEFF4'} textColor={'#1E2C40'}/>
+                    </div>
+                </div>
             </div>
-            <div>
-                <Genres />
+            <div className="genres-wrapper">
+                <div className="progress-title genres-title">
+                    <h3>Favourite genres</h3>
+                    <Link to="/explore/all-genres" className="progress-title__link">See more</Link>
+                </div>
+                <div className="progressbar">
+                    <Genres />
+                    <div className="genres-description">
+                        <div className="genres-description__title">
+                            <h3>Diagram based ob books that you’ve read
+                            and added to “to read” list.</h3>
+                        </div>
+                        <div className="genres-description__content">
+                            <div className="genres-description__content-item">
+                                <span className="first-span span"/>
+                                <p>Science fiction</p>
+                            </div>
+                            <div className="genres-description__content-item">
+                                <span className="second-span span"/>
+                                <p>Adventures</p>
+                            </div>
+                            <div className="genres-description__content-item">
+                                <span className="third-span span"/>
+                                <p>Psychology</p>
+                            </div>
+                            <div className="genres-description__content-item">
+                                <span className="fourth-span span"/>
+                                <p>Philosophy</p>
+                            </div>
+                            <div className="genres-description__content-item">
+                                <span className="fifth-span span"/>
+                                <p>Fantasy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -7,55 +7,6 @@ import './genres.css';
 const Genres = () => {
     return (
         <div className='genres'>
-            {/* <CircularProgressbarWithChildren
-                value={33}
-                styles={buildStyles({
-                    // Colors
-                    pathColor: '#38C7E7',
-                    trailColor: 'transparent',
-                })}
-                className='parent'
-            >
-                <CircularProgressbar 
-                    value={15} 
-                    className='child' 
-                    styles={buildStyles({
-                        // Colors
-                        pathColor: '#1E2C40',
-                        trailColor: 'transparent',
-                    })}
-                />
-                <CircularProgressbar 
-                    value={17} 
-                    className='child' 
-                    styles={buildStyles({
-                        // Colors
-                        pathColor: '#7BDFFF',
-                        trailColor: 'transparent',
-                        rotation: 0.33,
-                    })}
-                />
-                <CircularProgressbar 
-                    value={23} 
-                    className='child' 
-                    styles={buildStyles({
-                        // Colors
-                        pathColor: '#8EA0FF',
-                        trailColor: 'transparent',
-                        rotation: 0.5,
-                    })}
-                />
-                <CircularProgressbar 
-                    value={27} 
-                    className='child' 
-                    styles={buildStyles({
-                        // Colors
-                        pathColor: '#3B5DD6',
-                        trailColor: 'transparent',
-                        rotation: 0.73,
-                    })}
-                />
-            </CircularProgressbarWithChildren> */}
             <CircularProgressbarWithChildren
                 value={100}
                 counterClockwise={true}
@@ -121,6 +72,11 @@ const Genres = () => {
                     })}
                 />
             </CircularProgressbarWithChildren>
+            <p className="first">15%</p>
+            <p className="second">18%</p>
+            <p className="third">17%</p>
+            <p className="fourth">23%</p>
+            <p className="fifth">27%</p>
         </div>
     )
 }

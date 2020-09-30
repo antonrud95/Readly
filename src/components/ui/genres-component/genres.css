@@ -1,50 +1,7 @@
-/* .svg {
-    position: relative;
-    display: block;
-    width: 150px;
-    height: 150px;
-    z-index: 1000;
-}
-
-.circle {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke-width: 10;
-    stroke-linecap: round;
-    stroke: red;
-}
-
-.circle-first {
-    stroke-dasharray: 40;
-    stroke-dashoffset: 20;
-    stroke: #1E2C40;
-}
-
-.circle-second {
-    stroke-dasharray: 100;
-    stroke-dashoffset: 55;
-    stroke:#38C7E7;
-}
-.circle-third {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 360;
-    stroke:#7BDFFF;
-}
-.circle-fourth {
-    stroke-dasharray: 60;
-    stroke-dashoffset: 40;
-    stroke: #8EA0FF;
-} */
-/* .circle-fifth {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 600;
-    stroke:#8EA0FF;
-} */
-
 .genres {
     max-width: 150px;
     max-height: 150px;
+    position: relative;
 }
 
 .parent {
@@ -76,4 +33,39 @@
 .child-sec {
     position: absolute;
     z-index: 13;
+}
+
+.genres p {
+    margin: 0;
+}
+
+.first {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+
+.second {
+    position: absolute;
+    right: -33px;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.third {
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+}
+
+.fourth {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fifth {
+    position: absolute;
+    top: 0;
+    left: -5px;
 }

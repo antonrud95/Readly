@@ -93,8 +93,127 @@
 
 .progress-wrapper {
     margin-top: 20px;
-    display: flex;
+    /* display: flex; */
     width: 555px;
     min-height: 241px;
     background-color: #fff;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 10px 20px;
+    padding-top: 20px;
+}
+
+.progress-title h3{
+    margin: 0 !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1E2C40;
+}
+
+.progress-title__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #9BA4B3;
+}
+
+.progress-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.progress-card {
+    text-align: center;
+}
+
+.progress-card p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E2C40;
+    margin-bottom: 24px !important;
+}
+
+.genres-wrapper {
+    width: 565px;
+    height: 268px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.genres-title {
+    margin-bottom: 39px;
+}
+
+.progressbar {
+    margin-left: 50px;
+    margin-right: 57px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genres-description {
+    max-width: 226px;
+}
+
+.genres-description__title h3 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1E2C40;
+    margin-top: 0;
+}
+
+.genres-description__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres-description__content-item {
+    width: 50%;
+    margin-bottom: 16px;
+}
+
+.genres-description__content p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1E2C40;
+}
+
+.genres-description__content-item {
+    display: flex !important;
+    align-items: center;
+}
+
+.span {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.first-span {
+    background-color: #04004D;
+}
+.second-span {
+    background-color:#38C7E7;
+}
+.third-span {
+    background-color: #3B5DD6;
+}
+.fourth-span {
+    background-color: #7BDFFF;
+}
+.fifth-span {
+    background-color: #8EA0FF;
 }
