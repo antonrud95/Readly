@@ -1,0 +1,35 @@
+.social-wrapper-img img {
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 8px;
+}
+
+.social-wrapper-img {
+    max-height: 24px;
+}
+
+.social-wrapper-card {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 19px;
+    position: relative;
+}
+
+.social-text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1E2C40;
+    height: 100%;
+    margin-right: 16px;
+}
+
+.social-desc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #BBC1CA;
+    margin: 0;
+}

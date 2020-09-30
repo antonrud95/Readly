@@ -1,3 +1,11 @@
+.explore-wrapper {
+    display: flex;
+}
+
+.first-col {
+    margin-left: 40px;
+}
+
 .line-wrapper {
     position: relative;
     width: 555px;
@@ -6,6 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }
 
 .line-wrapper__title {
@@ -92,11 +102,12 @@
 }
 
 .progress-wrapper {
-    margin-top: 20px;
-    /* display: flex; */
+    margin-bottom: 16px;
     width: 555px;
     min-height: 241px;
     background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }
 
 .progress-title {
@@ -146,6 +157,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }
 
 .genres-title {
@@ -216,4 +229,13 @@
 }
 .fifth-span {
     background-color: #8EA0FF;
+}
+
+.social-wrapper {
+    width: 555px;
+    height: 179px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
 }

@@ -1,20 +1,15 @@
 import React, {useState, useEffect} from 'react';
 
-// import axios from 'axios';
-
 import BooksCard from '../../ui/books-card/books-card';
 import TopBook from '../../ui/book-of-the-day/top-book';
 import BestBook from '../../ui/best-book-card/best-book-card';
 import BestReader from '../../ui/best-reader/best-reader';
-
-// import SeeAll from '../../sections/all-books/all-books';
 
 import LoadingImg from '../../../assets/images/loading-image/loading.png';
 
 import './dashboard.css';
 
 import { Link } from 'react-router-dom';
-
 
 const DashboardPage = () => {
 
@@ -25,69 +20,7 @@ const DashboardPage = () => {
   const [ bests, setBests ] = useState([]);
   const [ readers, setReaders ] = useState([]);
 
-
   const [ loading, setLoading ] = useState(false);
-
-
-
-  // useEffect(() => {
-  //   const getBooks = async () => {
-  //     const response = await fetch('http://localhost:1337/books');
-  //     const data = await response.json();
-  //     setBooks(data);
-  //   }
-  //   getBooks();
-  // }, []);
-
-  // useEffect(() => {
-  //   const getReadings = async () => {
-  //     const response = await fetch('http://localhost:1337/readings');
-  //     const data = await response.json();
-  //     setReadings(data);
-  //   }
-  //   getReadings();
-  // }, []);
-
-  // useEffect(() => {
-  //   const getFavourites = async () => {
-  //     const response = await fetch('http://localhost:1337/favourites');
-  //     const data = await response.json();
-  //     setFavourites(data);
-  //   }
-  //   getFavourites();
-  // }, []);
-
-  // useEffect(() => {
-  //   const getTops = async () => {
-  //     const response = await fetch('http://localhost:1337/tops');
-  //     const data = await response.json();
-  //     setTops(data);
-  //   }
-  //   getTops();
-  // }, []);
-
-  // useEffect(() => {
-  //   const getBests = async () => {
-  //     const response = await fetch('http://localhost:1337/bests');
-  //     const data = await response.json();
-  //     setBests(data);
-  //   }
-  //   getBests();
-  // }, []);
-
-  // useEffect(() => {
-  //   const getReaders = async () => {
-  //     const response = await fetch('http://localhost:1337/readers');
-  //     const data = await response.json();
-  //     setReaders(data);
-  //   }
-  //   getReaders();
-  // }, []);
-
-
-
-
-
 
   useEffect(() => {
     const getBooks = async () => {
@@ -138,11 +71,6 @@ const DashboardPage = () => {
     }
     getReaders();
   }, []);
-
-
-
-
- 
   
     return (
       <React.Fragment>
