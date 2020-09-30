@@ -20,6 +20,8 @@
 
 .nav-item.item.active {
     text-decoration: none !important;
+    padding: 15px 0px 15px 40px;
+    border-left: 3px solid #3B5DD6;
 }
 .nav-item.item.active p {
     color: #1E2C40;
@@ -45,13 +47,3 @@ svg {
     padding: 43px 0 31px 43px;
 }
 
-.bottom-item-1 {
-    padding: 12px 0 12px 43px;
-}
-.bottom-item-2 {
-    padding: 12px 0 42px 43px;
-}
-
-.nav-lower {
-    margin-top: auto;
-}

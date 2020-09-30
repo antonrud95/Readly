@@ -181,7 +181,6 @@ const ExplorePage = () => {
                         <h3>Favourite authors</h3>
                         <div className="authors-content">
                             {authors.map(item =>
-                                
                                     <p className="authors-content__card">{item}</p>
                                 ) }
                         </div>
