@@ -18,14 +18,14 @@ const ExplorePage = () => {
     useEffect(() => {
         //Add strapi content
         const getSocial = async () => {
-            const response = await fetch('http://localhost:1337/social-activities');
+            const response = await fetch('https://readly-mongo.herokuapp.com/social-activities');
             const data = await response.json();
             setActivities(data);
             setLoading(true)
           }
           getSocial();
         const getRead = async () => {
-            const response = await fetch('http://localhost:1337/recently-reads');
+            const response = await fetch('https://readly-mongo.herokuapp.com/recently-reads');
             const data = await response.json();
             setRecentlyRead(data);
             setLoading(true)
@@ -98,9 +98,9 @@ const ExplorePage = () => {
                                     </Spinner> : 
                         activities.map(item => 
                             <SocialCard 
-                            url={item.logo.url}
-                            text={item.text}
-                            desc={item.desc}
+                            url={item.Logo.url}
+                            text={item.Text}
+                            desc={item.Desc}
                             key={item.id}
                             />
                         )}
@@ -134,9 +134,9 @@ const ExplorePage = () => {
                                 stylesWrapper={'recentry-read-item'}
                                 stylesWrapperContent={'recentry-read-img'}
                                 stylesWrapperTitle={'recentry-read-title'}
-                                url={item.image.url}
-                                title={item.title}
-                                author={item.description}
+                                url={item.Image.url}
+                                title={item.Title}
+                                author={item.Description}
                                 />)}
                         </div>
                     </div>

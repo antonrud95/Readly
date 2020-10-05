@@ -25,7 +25,7 @@ const DashboardPage = () => {
 
   useEffect(() => {
     const getBooks = async () => {
-      const response = await fetch('http://localhost:1337/books');
+      const response = await fetch('https://readly-mongo.herokuapp.com/books');
       const data = await response.json();
       setBooks(data);
       setLoading(true)
@@ -33,7 +33,7 @@ const DashboardPage = () => {
     getBooks();
 
     const getReadings = async () => {
-      const response = await fetch('http://localhost:1337/readings');
+      const response = await fetch('https://readly-mongo.herokuapp.com/readings');
       const data = await response.json();
       setReadings(data);
       setLoading(true)
@@ -41,7 +41,7 @@ const DashboardPage = () => {
     getReadings();
 
     const getFavourites = async () => {
-      const response = await fetch('http://localhost:1337/favourites');
+      const response = await fetch('https://readly-mongo.herokuapp.com/favourites');
       const data = await response.json();
       setFavourites(data);
       setLoading(true)
@@ -49,7 +49,7 @@ const DashboardPage = () => {
     getFavourites();
 
     const getTops = async () => {
-      const response = await fetch('http://localhost:1337/tops');
+      const response = await fetch('https://readly-mongo.herokuapp.com/tops');
       const data = await response.json();
       setTops(data);
       setLoading(true)
@@ -57,7 +57,7 @@ const DashboardPage = () => {
     getTops();
 
     const getBests = async () => {
-      const response = await fetch('http://localhost:1337/bests');
+      const response = await fetch('https://readly-mongo.herokuapp.com/bests');
       const data = await response.json();
       setBests(data);
       setLoading(true)
@@ -65,7 +65,7 @@ const DashboardPage = () => {
     getBests();
 
     const getReaders = async () => {
-      const response = await fetch('http://localhost:1337/readers');
+      const response = await fetch('https://readly-mongo.herokuapp.com/readers');
       const data = await response.json();
       setReaders(data);
       setLoading(true)
@@ -85,8 +85,8 @@ const DashboardPage = () => {
               <div className="items-wrapper">
                 {books.map(book => 
                   <BooksCard
-                  url={book.image.url} 
-                  title={book.title}
+                  url={book.Image.url} 
+                  title={book.Title}
                   key={book.id}
                   stylesWrapper="books-card-wrapper"
                   stylesWrapperContent="books-card-wrapper__content"
@@ -98,10 +98,10 @@ const DashboardPage = () => {
             <div className="tops">
               {tops.map(top =>
                 <TopBook 
-                url={top.image.url}
-                title={top.title}
-                author={top.author}
-                description={top.description}
+                url={top.Image.url}
+                title={top.Title}
+                author={top.Author}
+                description={top.Description}
                 key={Date.now()}
                 /> 
               )}
@@ -109,9 +109,9 @@ const DashboardPage = () => {
             <div className="best">
               {bests.map(best => 
                 <BestBook
-                  url={best.image.url}
-                  title={best.title}
-                  description={best.description}
+                  url={best.Image.url}
+                  title={best.Title}
+                  description={best.Description}
                   key={Math.random()}
                 />)}
             </div>
@@ -125,10 +125,10 @@ const DashboardPage = () => {
               <div className="readings-wrapper">
                 {readings.map(read => 
                   <BooksCard
-                  url={read.image.url} 
-                  title={read.title}
+                  url={read.Image.url} 
+                  title={read.Title}
                   key={read.id}
-                  author={read.author}
+                  author={read.Author}
                   stylesWrapper="readings-card-wrapper"
                 />
                 )}
@@ -142,10 +142,10 @@ const DashboardPage = () => {
               <div className="favourites-wrapper">
                 {favourites.map(favourite => 
                   <BooksCard
-                  url={favourite.img.url} 
-                  title={favourite.title}
+                  url={favourite.Img.url} 
+                  title={favourite.Title}
                   key={favourite.id}
-                  author={favourite.author}
+                  author={favourite.Author}
                   stylesWrapper="favourites-card-wrapper"
                 />
                 )}
@@ -156,8 +156,8 @@ const DashboardPage = () => {
               <div className="reader-item-wrapper">
               {readers.map(reader => 
                 <BestReader 
-                  url={reader.image.url}
-                  title={reader.title}
+                  url={reader.Image.url}
+                  title={reader.Title}
                   key={Math.random()}
                 />)}
               </div>
